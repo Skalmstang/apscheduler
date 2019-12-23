@@ -54,7 +54,7 @@ You can use ``start_date`` and ``end_date`` to limit the total time in which the
 
 The :meth:`~apscheduler.schedulers.base.BaseScheduler.scheduled_job` decorator works nicely too::
 
-    from apscheduler.scheduler import BlockingScheduler
+    from apscheduler.schedulers.blocking import BlockingScheduler
 
     @sched.scheduled_job('interval', id='my_job_id', hours=2)
     def job_function():
